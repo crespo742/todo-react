@@ -1,8 +1,18 @@
 import React from 'react';
-import Routes from './src/config/routes';
+import styled from 'styled-components/native';
+import ToDoList from './TodoList/index';
 
-const App = () => {
-  return <Routes />;
-};
+export default function App() {
+  return (
+    <AppContainer>
+      <ToDoList />
+    </AppContainer>
+  );
+}
 
-export default App;
+const AppContainer = styled.View`
+  flex: 1;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+`;
